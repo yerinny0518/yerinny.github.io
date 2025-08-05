@@ -1,7 +1,7 @@
 title: YerIn
 description: "Satellite - Jekyll blog"
 url: "https://yerinny0518.github.io"
-baseurl: "/yerinny.github.io"   # ★ 프로젝트 사이트라서 꼭 필요!
+baseurl: "/yerinny.github.io"   # ★ 프로젝트 사이트는 꼭 필요
 
 remote_theme: byanko55/jekyll-theme-satellite
 plugins:
