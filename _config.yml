@@ -1,0 +1,11 @@
+title: YerIn
+description: "Satellite - Jekyll blog"
+url: "https://yerinny.github.io"
+baseurl: ""
+
+remote_theme: byanko55/jekyll-theme-satellite
+plugins:
+  - jekyll-remote-theme
+
+locale: ko_KR
+timezone: Asia/Seoul
