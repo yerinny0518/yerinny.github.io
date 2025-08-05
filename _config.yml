@@ -1,53 +1,60 @@
-title: example.com
-description: "Satellite - jekyll blog theme"
-logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/profile.webp"
+# ----- 기본 정보 -----
+title: YerIn
+description: "Satellite - Jekyll blog"
+url: "https://yerinny0518.github.io"     # ← 사용자 도메인
+baseurl: "/yerinny.github.io"            # ← 프로젝트 저장소 경로(반드시 '/저장소이름')
 
-# Social Links
+locale: ko_KR
+timezone: Asia/Seoul
+
+# ----- 사이트 이미지(선택) -----
+# 프로젝트 사이트이므로 경로 앞에 '/yerinny.github.io'를 붙였습니다.
+logo_img: "/yerinny.github.io/assets/img/favicon.webp"
+profile_img: "/yerinny.github.io/assets/img/profile.webp"
+
+# ----- 소셜(원하면 채우세요) -----
 email: example@gmail.com
-github_username: github
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+github_username: yerinny0518
+twitter_username:
+instagram_username:
+linkedin_username:
+facebook_username:
 
-# External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
-giscus_repoId: "R_kgDOJ6fqWg"
-giscus_category: "Q&A"
-giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
-goatcounter_code: byanko77
+# ----- 외부 연동(선택) -----
+# 사용 안 하면 비워 둬도 됩니다.
+giscus_repo:
+giscus_repoId:
+giscus_category:
+giscus_categoryId:
+goatcounter_code:
 google_analytics:
 
-# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
-# Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
-baseurl:
-
-# Build settings
+# ----- 빌드 설정 -----
+# GitHub Pages에서 허용되는 플러그인만 사용 (안전)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-loading-lazy
 
 exclude:
   - docs/
 
+# ----- 컬렉션(테마 구조 유지) -----
 collections:
   pages:
     output: true
     permalink: /:path.html
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
       date: "1900-01-01"
 
-# Markdown newline activator 
+# ----- 마크다운 설정 -----
 kramdown:
   input: GFM
   hard_wrap: true
+
